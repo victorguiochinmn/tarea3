@@ -1,0 +1,38 @@
+Variables Estáticas: Una variable estática mantiene su valor a lo largo de toda la ejecución del programa del programa independientemente del ámbito en el que estén definidas.
+•  Si una variable estática está declarada fuera de las funciones, será accesible únicamente por el código que le siga en el mismo fichero de su declaración.
+•  Si una variable estática está declarada en una función, sólo será accesible desde esa función y mantendrá su valor entre ejecuciones de la función.
+Ciclo de vida  de las variables Clase: – Se crean cuando se crea el objeto que las contiene. 
+– Se inicializan por defecto si no se hace de modo explícito: 0 para números, "false" para booleano, "null" para objetos. 
+– Se destruyen cuando el recolector de basura de Java no encuentra referencias activas para el objeto.
+Ciclo de vida  de las variables Método: – Creadas en la sentencia en la que están definidas. 
+– No se inicializan por defecto. Contienen datos imprevisibles. 
+– Se destruyen al salir del bloque (en la llave final).
+Ciclo de vida  de las variables Estáticas: – Se crean cuando la clase se usa por primera vez. 
+– Se inicializan por defecto si no se hace de modo explícito: 0 para números, "false" para booleano, "null" para objetos 
+– Suelen existir para el resto del programa (salvo que no esté cargado).
+Memoria Dinámica: La memoria dinámica es un espacio de almacenamiento que se solicita en tiempo de ejecución. De esa manera, a medida que el proceso va necesitando espacio para más líneas, va solicitando más memoria al sistema operativo para guardarlas. El medio para manejar la memoria que otorga el sistema operativo, es el puntero, puesto que no podemos saber en tiempo de compilación dónde nos dará huecos el sistema operativo (en la memoria de nuestro PC).
+VENTAJAS:
+Es posible disponer de un espacio de memoria arbitrario que dependa de información dinámica (disponible sólo en ejecución): Toda esa memoria que maneja es implementada por el programador cuando fuese necesario.
+  Otra ventaja de la memoria dinámica es que se puede ir incrementando durante la ejecución del programa. Esto permite, por ejemplo, trabajar con arreglos dinámicos.
+  Es memoria que se reserva en tiempo de ejecución. Su tamaño puede variar durante la ejecución del programa y puede ser liberado mediante la función free.
+
+DESVENTAJAS:
+  Es difícil de implementar en el desarrollo de un programa o aplicación. 
+  Es difícil implementar estructuras de datos complejas como son los tipos recursivos (árboles, grafos, etc.).Por ello necesitamos una forma para solicitar y liberar memoria para nuevas variables que puedan ser necesarias durante la ejecución de nuestros programas: Heap.
+  Una desventaja de la memoria dinámica es que es más difícil de manejar.
+ La memoria dinámica puede afectar el rendimiento. Puesto que con la memoria estática el tamaño de las variables se conoce en tiempo de compilación, esta información está incluida en el código objeto generado. Cuando se reserva memoria de manera dinámica,
+ Se tienen que llevar a cabo varias tareas, como buscar un bloque de memoria libre y almacenar la posición y tamaño de la memoria asignada, de manera que pueda ser liberada más adelante. Todo esto representa una carga adicional, aunque esto depende de la implementación y hay técnicas para reducir su impacto.   
+
+Clase: Es un conjunto de objetos que comparten una estructura y comportamiento comunes.
+Objeto: Es el centro (unidad de construcción) de la programación orientada a objetos. Tienen encapsulación, valor, identificador y métodos.
+Instanciación: es el proceso de leer o especificar información, como los valores y el tipo de almacenamiento de un campo de datos. Para optimizar los recursos del sistema, la instanciación es un proceso dirigido por el usuario, que le indica al software que lea los valores especificando opciones en la pestaña Tipos de un nodo de origen o ejecutando los datos a través de un nodo Tipo.
+Herencia: Modela el hecho de que los objetos tienden a organizarse en jerarquías, existe la herencia simple, herencia múltiple, substitución, inclusión, especialización, restricción.
+Sobrecarga: es la capacidad de un lenguaje de programación, que permite nombrar con el mismo identificador diferentes variables u operaciones.En programación orientada a objetos la sobrecarga se refiere a la posibilidad de tener dos o más funciones con el mismo nombre pero funcionalidad diferente. Es decir, dos o más funciones con el mismo nombre realizan acciones diferentes. El compilador usará una u otra dependiendo de los parámetros usados. A esto se llama también sobrecarga de funciones.
+Ensombrecimiento: Se llama shadowing al hecho de que en una clase una variable miembro y una variable local definida en un método miembro, se llamen igual.
+Bibliografía:
+http://adrian-estructuradedatos.blogspot.mx/2011/04/memoria-estatica-y-dinamica.html
+http://www.it.uc3m.es/labas/course_notes/variables_es.html
+https://es.wikipedia.org/wiki/Sobrecarga_%28inform%C3%A1tica%29
+http://www-01.ibm.com/support/knowledgecenter/SS3RA7_17.0.0/clementine/typenode_instantiation.dita?lang=es
+https://misapuntesdeprogramacion.wordpress.com/2013/01/17/que-es-shadowing/
+http://mit.ocw.universia.net/1.00/s02/class-sessions/lecture-11/lecture-11.pdf
